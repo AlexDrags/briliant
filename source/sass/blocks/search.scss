@@ -1,0 +1,25 @@
+/* Стиль окна поиска */
+#mySearch {
+  // width: 100%;
+  font-size: 18px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  border: none;
+  background: #f8f8f8;
+  padding-left: 54px;
+}
+
+.search {
+  position: relative;
+  border-left: 1px solid #f0f0f0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url("../img/sprite/find-icon.svg") no-repeat center;
+    left: 24px;
+    top: calc(50% - 10px);
+  }
+}

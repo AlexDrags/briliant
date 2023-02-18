@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+  <meta name="description" content="Описание проекта">
+  <title>ProjectName</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+
+      <div class="header__wrapper container">
+        <div class="header__top">
+          <div class="header__dropdown dropdown">
+            <select class="dropbtn" name="" id="">
+              <option value="" selected>Санкт-Петербург</option>
+              <option value="">Москва</option>
+              <option value="">Калининград</option>
+            </select>
+            <!-- <button onclick="myFunction()" class="dropbtn">Санкт-Петербург</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Санкт-Петербург</a>
+              <a href="#">Москва</a>
+              <a href="#">Калининград</a>
+            </div> -->
+          </div>
+
+          <p class="telephone">
+            <a href="tel:+88007852535">8 800 785-25-35</a>
+          </p>
+
+          <div class="header__logo logo">
+            <img src="./img/logo.png" width="183" height="52" alt="Goldy Store ювелирный магазин.">
+          </div>
+
+          <div class="user-menu">
+            <ul>
+              <li>
+                <a href="/">Вход</a>
+              </li>
+              <li>
+                <a href="/">Регистрация</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href="/">
+                  <span class="visually-hidden">Избранное.</span>
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite.svg#like-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <span class="visually-hidden">Сравнение.</span>
+                  <svg width="13" height="15">
+                    <use xlink:href="img/sprite.svg#rate-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <span class="visually-hidden">Корзина.</span>
+                  <svg width="16" height="17">
+                    <use xlink:href="img/sprite.svg#cart-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <nav class="header__navigation navigation">
+
+          <ul>
+            <li>
+              <a href="/">Каталог</a>
+            </li>
+            <li>
+              <a href="/">Акции</a>
+            </li>
+            <li>
+              <a href="/">Бренды</a>
+            </li>
+            <li>
+              <a href="/">Магазины</a>
+            </li>
+            <li>
+              <a href="/">О нас</a>
+            </li>
+            <li>
+              <a href="/">Доставка и оплата</a>
+            </li>
+            <li>
+              <a href="/">Статьи</a>
+            </li>
+          </ul>
+
+          <div class="search">
+            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Поиск по сайту"
+              title="Введите категорию">
+          </div>
+        </nav>
+      </div>
+
+    </header>
+    <main>
+      <section class="promo">
+        <h1 class="visually-hidden">Ювелирный магазин GoldyStore</h1>
+        <div class="container">
+
+          <div class="promo__swiper swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="swiper__image-wrapper">
+                  <div>
+                    <p>
+                      Суперскидка до 60%<br />
+                      <span>На бриллианты</span>
+                    </p>
+                    <a class="btn btn--black" href="/">Подробнее</a>
+                  </div>
+                  <img src="./img/img-slide1.png" alt="" loading="lazy">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__image-wrapper">
+                  <div>
+                    <p>
+                      Суперскидка до 40%<br />
+                      <span>На золото</span>
+                    </p>
+                    <a class="btn btn--black" href="/">Подробнее</a>
+                  </div>
+                  <img src="./img/img-slide1.png" alt="" loading="lazy">
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="swiper__image-wrapper">
+                  <div>
+                    <p>
+                      Суперскидка до 70%<br />
+                      <span>На серебро</span>
+                    </p>
+                    <a class="btn btn--black" href="/">Подробнее</a>
+                  </div>
+                  <img src="./img/img-slide1.png" alt="" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="promo__swiper-pagination swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="promo__swiper-button-prev swiper-button-prev"></div>
+            <div class="promo__swiper-button-next swiper-button-next"></div>
+          </div>
+
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h2 class="section-title">Популярные категории</h2>
+
+          <ul class="category-list">
+            <li>
+              <a href="/">
+                <img src="./img/category-1.png" alt="Кольца." loading="lazy">
+                <h3>Кольца</h3>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="./img/category-2.png" alt="Серьги." loading="lazy">
+                <h3>Серьги</h3>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="./img/category-3.png" alt="Помолвочные кольца." loading="lazy">
+                <h3>Помолвочные<br /> кольца</h3>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="./img/category-4.png" alt="Браслеты." loading="lazy">
+                <h3>Браслеты</h3>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="./img/category-5.png" alt="Колье и подвески." loading="lazy">
+                <h3>Колье и подвески</h3>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src="./img/category-6.png" alt="Часы." loading="lazy">
+                <h3>Часы</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="section-title">Распродажа</h2>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="tab">
+          <button class="tablinks active" id="defaultOpen" type="button">Кольца</button>
+          <button class="tablinks" type="button">Серьги</button>
+          <button class="tablinks" type="button">Браслеты</button>
+          <button class="tablinks" type="button">Часы</button>
+        </div>
+        <div id="rings" class="tabcontent">
+          <div class="products__swiper swiper">
+            <div class="products__swiper-wrapper swiper-wrapper">
+
+              <div class="products__swiper-slide swiper-slide">
+                1
+              </div>
+
+              <div class="products__swiper-slide swiper-slide">
+2
+              </div>
+
+              <div class="products__swiper-slide swiper-slide">
+3
+              </div>
+
+              <div class="products__swiper-slide swiper-slide">
+4
+              </div>
+
+              <div class="products__swiper-slide swiper-slide">
+5
+              </div>
+
+              <div class="products__swiper-slide swiper-slide">
+6
+              </div>
+
+              <div class="products__swiper-slide swiper-slide">
+7
+              </div>
+
+              <div class="products__swiper-slide swiper-slide">
+8
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div id="links" class="tabcontent">
+
+        </div>
+        <div id="wristlets" class="tabcontent">
+
+        </div>
+        <div id="watchs" class="tabcontent">
+
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/vendor.min.js"></script>
+  <script defer src="js/main.min.js"></script>
+</body>
+
+</html>

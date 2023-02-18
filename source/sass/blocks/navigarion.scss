@@ -1,0 +1,29 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  background: #f8f8f8;
+
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-right: auto;
+  }
+
+  & a {
+    display: block;
+    padding: 25px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+
+    @include hover-focus {
+      opacity: 0.5;
+    }
+  }
+}
