@@ -5,6 +5,14 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 20px;
+  row-gap: 10px;
+  justify-content: center;
+
+  & li {
+    @include vp-767 {
+      width: 100%;
+    }
+  }
 
   & img {
     margin-right: auto;

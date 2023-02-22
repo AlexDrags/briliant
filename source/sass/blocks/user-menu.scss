@@ -1,6 +1,11 @@
 .user-menu {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+
+  @include vp-767 {
+    justify-content: center;
+  }
 
   & ul {
     padding: 0;
@@ -11,6 +16,10 @@
 
     &:not(:last-of-type) {
       margin-right: 70px;
+
+      @include vp-767 {
+        margin-right: 0;
+      }
 
       & li:not(:last-of-type) {
         position: relative;

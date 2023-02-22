@@ -1,6 +1,6 @@
 
 import Swiper, {Navigation, Pagination} from 'swiper';
-import '../../vendor/swiper';
+// import '../../vendor/swiper';
 
 const topSlider = new Swiper('.promo__swiper', {
   modules: [Navigation, Pagination],

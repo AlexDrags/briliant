@@ -5,6 +5,7 @@
   & a {
     color: #303030;
     text-decoration: none;
+    white-space: nowrap;
 
     @include hover-focus {
       &::before {

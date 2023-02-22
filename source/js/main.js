@@ -1,9 +1,10 @@
 /* eslint-disable no-undef */
 import {iosVhFix} from './utils/ios-vh-fix';
 import './modules/dropdownBtn/dropdown-btn';
-import initTabs from './modules/tabs/init-tabs';
 import './modules/slider/init-top-slider';
+import initTabs from './modules/tabs/init-tabs';
 import './modules/slider/init-middle-slider';
+import './modules/slider/init-inner-slider';
 
 
 // ---------------------------------
@@ -12,7 +13,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
-
   iosVhFix();
 
   // Modules

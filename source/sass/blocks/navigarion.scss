@@ -1,7 +1,14 @@
 .navigation {
   display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
   align-items: center;
   background: #f8f8f8;
+
+  @include vp-767 {
+    // flex-direction: column;
+    justify-content: center;
+  }
 
   & ul {
     display: flex;
@@ -10,6 +17,19 @@
     margin: 0;
     list-style-type: none;
     margin-right: auto;
+
+    @include vp-767 {
+      width: 100%;
+      align-items: center;
+      margin-right: 0;
+    }
+
+    & li {
+      @include vp-767 {
+        width: 100%;
+        text-align: center;
+      }
+    }
   }
 
   & a {
@@ -24,6 +44,14 @@
 
     @include hover-focus {
       opacity: 0.5;
+    }
+  }
+
+  & .navigation__search {
+    border-left: 1px solid #f0f0f0;
+
+    @include vp-767 {
+      border-left: none;
     }
   }
 }
